@@ -1,30 +1,49 @@
-# ELA Quest — Champion Edition
+# ELA Quest — Five Temples Adventure
 
-**GitHub Pages installation:** The website is completely contained in `index.html`. Upload **only `index.html`** to the root of your existing `ELAQuest` repository, replacing the previous file. Commit. After GitHub Pages deploys, hard-refresh `https://streamsintowealth.github.io/ELAQuest/` (Ctrl+Shift+R on Windows). Do not upload the `README.md` unless you want to keep these notes in the repository.
+This version keeps the existing ELA Quest dashboard, practice passages, 6 modes, Guild Market, coins, music, ranks, and writing tools. Only **Quest Adventure** has been redesigned as a five-temple 3D journey.
 
-## What's new
+## Publish to GitHub Pages
 
-- Earn **points** by answering reading questions. Finish a session to bank its points permanently as **glory** for the selected game mode.
-- Earn **virtual coins** for correct answers, and bonus coins and a collectible **relic** for each mission win.
-- Open the **Guild Market** to purchase, equip and trade gear. Coins never involve real money.
-- Equip one item per gear slot. Better items add points, coin rewards, battle damage, improved race speed, or defense in their relevant mode.
-- Open **Rankings** to see six separate mode-specific champion boards. Each contains your personal rank against **five fictional guild rivals with fixed benchmark scores**. Reaching #1 unlocks the rank-one recognition.
-- Inventory, equipped gear, coin balance, and banked ranking points are saved in this browser's local storage, with no account.
+1. Extract `ELAQuest_Five_Temples_GitHub.zip`.
+2. Open your existing `Streamsintowealth/ELAQuest` repository.
+3. Upload the new **`index.html`** to the repository root, replacing the existing `index.html`.
+4. Commit. Visit `https://streamsintowealth.github.io/ELAQuest/` once GitHub Pages finishes deploying. Refresh the page if your browser cached the previous version.
 
-### Important classroom limitation
+This website is self-contained. There is no server, account, or external 3D library to install. A browser that supports WebGL gets the WebGL view; devices blocking WebGL use a rendered software 3D scene instead. The visuals are deliberately stylized low-poly 3D, **not** photorealistic/AAA 3D.
 
-This is an **on-device single-player challenge**, not a live leaderboard of students. The fictional benchmark rivals are clearly labeled. Each browser/device has its own progress, so two students on different computers are not directly competing. Clearing browser storage or using private browsing may erase progress. To make a **shared classroom leaderboard, accounts, or student-to-student trading**, the site would need a secure backend, privacy controls, and an explicit future upgrade.
+## Controls — Quest Adventure
 
-### Rewards and fair play
+| Control | Action |
+| --- | --- |
+| ↑ ↓ ← → / W A S D | Walk around the temple |
+| Hold Shift while moving | Sprint, using additional stamina |
+| Space | Sword attack when a guardian is close |
+| F | Special attack (requires charge, energy, and stamina) |
+| Q | Guard and reduce an incoming attack |
+| E | Collect a nearby relic, activate a shrine, or enter the cleared temple gate |
+| Click **Study & recharge** | Pause exploration to read and answer questions for more resources |
 
-Coins are awarded for correct answers; wrong answers do not award coins. The reading activities and all six game modes remain playable. The different item effects reward continued reading and thoughtful gear choices. The results page banks a session's score once, when that session finishes.
+Touchscreen devices display direction and action controls on the adventure scene.
 
-### How to test after deploying
+## Five temples
 
-1. Open ELA Quest and choose an avatar, skill, difficulty, and game mode.
-2. Open **Rankings**, then switch through the six modes.
-3. Answer several questions, watch the coin count rise, and finish a mission to win a relic.
-4. Open **Guild Market**; equip an item and use the Inventory & Trade tab to sell a spare.
-5. Complete the session. Confirm the final rank and saved glory; reopen the website to check that progress remains on that same browser.
+1. **Land Temple:** Explore the forest, recover two earth seals, defeat two stone guardians.
+2. **Water Temple:** Find tide pearls, follow the temple bridge, and defeat water sentries. Wading away from the central route costs more energy.
+3. **Snow Temple:** Activate three frost beacons and defeat icy enemies. The cold gradually reduces endurance as you travel.
+4. **Air Temple:** Activate three sky chimes and defeat sky knights. Wind affects horizontal movement.
+5. **Fire Temple:** Recover two fire sigils, defeat the ember guards, then face **the Dragon King**. Lava terrain can reduce life when you leave the safe path.
 
-Sound/music, original visual design, TRACES supports, question bank, and existing game modes remain in place. No files besides `index.html` are necessary to host the game.
+Defeat enemies and collect every objective to unlock the temple gate. The final stage ends after defeating the Dragon King. Guardians are **computer-controlled opponents**, not other students or online players.
+
+## Reading fuels gameplay
+
+- Correct answers replenish life, energy, stamina and endurance and earn special attack charges.
+- Stronger swords are unlocked at reading milestones; equipped Guild gear also boosts attacks.
+- When resources are too low, the environment automatically pauses and asks the student to earn more strength through an ELA question.
+- The session timer pauses during required study. If play time expires, choose **Continue +5 minutes** to keep the journey. Progress can be resumed from a saved temple checkpoint on the same browser.
+
+## Notes
+
+- Student rewards, Guild inventory, and rankings are stored locally in each browser; rankings compare the student with fictional rivals. There is no real multiplayer mode.
+- The original reading content and other game modes have been preserved. No material from the user's reference images has been copied into the website; the screenshots inspired the layout.
+- Use the old `index.html` as a backup before uploading this version.
